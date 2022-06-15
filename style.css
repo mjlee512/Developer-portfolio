@@ -1,25 +1,49 @@
 :root {
-        /* Font size */
-/* --font-xlarge:px;
-    --font-large:px;
-    --font-medium:px;
-    --font-small:px;
-    --font-xsmall:px; */
+     /* Font size */
+    --font-xlarge:48px;
+    --font-large:28px;
+    --font-medium:18px;
+    --font-small:16px;
+    --font-xsmall:14px;
 
-        /* Font weight */
- /* --weight-bold:;
-    --weight-semiBold:;
-    --weight-regular:; */
+    /* Font weight */
+    --weight-bold:800;
+    --weight-semiBold:600;
+    --weight-regular:400;
 
         /* Color */
     --color-white:#ffffff;
     --color-black:#000000;
     --color-dark-white:#bdbdbd;
-    
+
         /* Size */
 }
 
 /* 전체 적용 */
 * {
     box-sizing: border-box;
+}
+
+h1{
+    font-size: var(--font-xlarge);
+    font-weight: var(--weight-bold);
+    color:var(--color-black);
+}
+
+h2{
+    font-size: var(--font-large);
+    font-weight: var(--weight-semiBold);
+    color: var(--color-black);
+}
+
+h3{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
+}
+
+p{
+    font-size: var(--font-medium);
+    font-weight: var(--weight-regular);
+    color: var(--color-black);
 }
