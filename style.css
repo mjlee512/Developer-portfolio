@@ -1,0 +1,25 @@
+:root {
+        /* Font size */
+/* --font-xlarge:px;
+    --font-large:px;
+    --font-medium:px;
+    --font-small:px;
+    --font-xsmall:px; */
+
+        /* Font weight */
+ /* --weight-bold:;
+    --weight-semiBold:;
+    --weight-regular:; */
+
+        /* Color */
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-dark-white:#bdbdbd;
+    
+        /* Size */
+}
+
+/* 전체 적용 */
+* {
+    box-sizing: border-box;
+}
