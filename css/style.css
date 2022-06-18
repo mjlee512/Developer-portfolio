@@ -15,6 +15,8 @@
     --color-white: #ffffff;
     --color-black: #000000;
     --color-dark-white: #bdbdbd;
+    --color-dark-purple:#6D6A9F;
+    --color-purple:#7174AB;
 
     /* Size */
     --size-border-radius: 4px;
@@ -37,8 +39,19 @@ a{
 }
 
 ul{
-    list-style:none;
+    list-style: none;
     padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 h1{
@@ -65,10 +78,12 @@ p{
     color: var(--color-black);
 }
 
+/* Navbar */
+
 #navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #B177A7;
+    background-color: #7174AB;
     color:var(--color-white);
     align-items: center;
     padding:15px;
@@ -95,6 +110,73 @@ p{
 }
 
 .navbar__menu__item:hover{
-    background-color: #E88EA8;
+    background-color:#6D6A9F;
     border-radius: var(--size-border-radius);
+}
+
+/* Home */
+
+#home {
+    background:url("../imgs/home-background.png") center/cover no-repeat;
+    padding:40px;
+    text-align: center;
+}
+
+.home__title,
+.home__description {
+    color: var(--color-white);
+}
+
+.home__contact {
+    color: var(--color-white);
+    font-size: var(--font-small);
+    font-weight: var(--weight-regular);
+    margin: 24px;
+    padding: 8px 12px;
+    border: 2px solid var(--color-white);
+    border-radius: 4px;
+}
+
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About */
+
+.about__majors {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.major__icons {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    border: 1px solid;
+    color:#8E96BD;
+    border-color: #8E96BD;
+    border-radius: 50%;
+    margin-bottom:16px;
+}
+
+.major__icons i {
+    transition: all 250ms ease;
+}
+
+.major__icons:hover i {
+    color: #CB807D;
+    transform: rotate(-30deg) scale(1.1);
+}
+
+.major__title, .major__description {
+    color: rgb(93, 93, 93);
+}
+
+.job {
+    display: flex;
 }
