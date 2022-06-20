@@ -58,24 +58,29 @@ h1{
     font-size: var(--font-xlarge);
     font-weight: var(--weight-bold);
     color:var(--color-black);
+    margin: 16px 0;
 }
 
 h2{
     font-size: var(--font-large);
     font-weight: var(--weight-semiBold);
     color: var(--color-black);
+    margin: 8px 0;
 }
 
 h3{
     font-size: var(--font-medium);
     font-weight: var(--weight-regular);
     color: var(--color-black);
+    margin: 8px 0;
 }
 
 p{
     font-size: var(--font-medium);
     font-weight: var(--weight-regular);
     color: var(--color-black);
+    margin: 4px 0;
+    line-height: 20px;
 }
 
 /* Navbar */
@@ -96,6 +101,8 @@ p{
 .navbar__logo{
     font-size:var(--font-medium);
     font-weight:var(--weight-semiBold);
+    padding: 8px 12px;
+    margin: 0 4px;
 }
 
 .navbar__menu__item{
@@ -140,6 +147,10 @@ p{
 .section {
     padding: 50px;
     text-align: center;
+    margin: auto;
+}
+
+.section__container {
     max-width: 1200px;
     margin: auto;
 }
@@ -152,23 +163,24 @@ p{
     margin: 80px 0;
 }
 
-.major__icons {
+.major__icon {
     width: 170px;
     height: 170px;
     line-height: 170px;
     font-size: 70px;
+    margin: auto;
     border: 1px solid;
     color:#8E96BD;
     border-color: #8E96BD;
     border-radius: 50%;
-    margin-bottom:16px;
+    margin-bottom: 16px;
 }
 
-.major__icons i {
+.major__icon i {
     transition: all 250ms ease;
 }
 
-.major__icons:hover i {
+.major__icon:hover i {
     color: #CB807D;
     transform: rotate(-30deg) scale(1.1);
 }
@@ -177,6 +189,36 @@ p{
     color: rgb(93, 93, 93);
 }
 
-.job {
+.major__description {
+    font-size: var(--font-xsmall);
+    line-height: 20px;
+}
+
+.education {
     display: flex;
+    align-content: center;
+    line-height: 20px;
+}
+
+.education__description {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.education__major, .education__period {
+    color: rgb(174, 174, 174);
+}
+
+.education__major {
+    font-size: var(--font-small);
+}
+
+.education__period {
+    font-size: var(--font-xsmall);
+}
+
+/* Skill */
+
+#skills {
+    background-color: #846793;
 }
