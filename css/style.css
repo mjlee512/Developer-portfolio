@@ -230,7 +230,7 @@ p{
 .skillset {
     display: flex;
     color:rgb(249, 252, 241);
-    margin: 20px 0;
+    margin: 40px 0 0 20px;
 }
 
 .skillset__title {
@@ -271,4 +271,28 @@ p{
 
 .tools,.etc {
     padding: 20px;
+}
+
+/* Contact */
+
+#contact {
+    background-color:rgb(238, 238, 238);
+}
+
+.contact__title, .contact__email {
+    color:white;
+
+}
+
+.contact__title {
+    margin: 32px 0;
+}
+
+.contact__links {
+    font-size: var(--font-large);
+}
+
+.contact__links i:hover {
+    transform: scale(1.5);
+    transition: all ;
 }
