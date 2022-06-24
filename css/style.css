@@ -121,6 +121,15 @@ p{
     border-radius: var(--size-border-radius);
 }
 
+.navbar__toggle {
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color:white;
+    margin-top: 13px;
+    display: none;
+}
+
 /* Home */
 
 #home {
@@ -196,7 +205,7 @@ p{
 
 .education {
     display: flex;
-    align-content: center;
+    justify-content: center;
     line-height: 20px;
 }
 
@@ -295,4 +304,36 @@ p{
 .contact__links i:hover {
     transform: scale(1.5);
     transition: all ;
+}
+
+/* 반응형 */
+
+@media screen and (max-width:768px) {
+    .navbar__toggle {
+        display: block;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .about__majors {
+        flex-direction: column;
+    }
+
+    .major {
+        margin-bottom: 40px;
+    }
+
+    .skillset {
+        flex-direction: column;
+    }
 }
